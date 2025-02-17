@@ -53,6 +53,12 @@ function validarCampos() {
         alert("O número inicial deve ser menor que o número final.");
         return false; // Retorna falso se a condição não for satisfeita
     }
+    
+    // Verifica se a quantidade de numero sorteados é sulficiente.
+    if(quantidade > (ate - de +  1)){
+        alert('A quantidade de números solicitados excede o intervalo, favor informar um intervalo maior');
+        return false;
+    }
 
     return true; // Retorna verdadeiro se todos os campos estiverem preenchidos
 }
